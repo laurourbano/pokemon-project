@@ -1,1 +1,3 @@
-<app-pokemon-card *ngFor="let pokemon of pokemons; index" class="pokemon-card"></app-pokemon-card>
+<app-pokemon-card 
+*ngFor="let pokemon of pokemons; index as i" [pokemon]="pokemon">
+</app-pokemon-card>

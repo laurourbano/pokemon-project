@@ -1,14 +1,23 @@
 .pokemon-card {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 350px;
   height: 350px;
   margin: 30px;
-  border: 1px solid #456789;
-  border-radius: 5px;
+  border-top: 15px solid #abc123;
+  border-bottom: 5px solid #abc123;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #abcdef;
 }
 
 .pokemon-card:hover {
   scale: 1.1;
   transition: 0.5s;
-  box-shadow: 15px 15px 10px #456789;
+}
+
+img {
+  width: 200px;
+  height: 200px;
 }

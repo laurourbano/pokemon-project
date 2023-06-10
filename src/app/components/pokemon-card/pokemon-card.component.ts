@@ -9,11 +9,11 @@ export class PokemonCardComponent {
 
   event: Event = new Event('');
 
-  @Input()
-  pokemons!: Pokemon[];
+  @Input() pokemon: Pokemon = {} as Pokemon;
 
-  onAction(event: Event) {
-    return
+  pegarImagemPokemon() {
+    const numeroFormatadado = this.pokemon.number.toString().padStart(3, '0');
+
+    return `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${ numeroFormatadado }.png`;
   }
-
 }

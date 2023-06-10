@@ -1,12 +1,11 @@
 <mat-card class="pokemon-card">
   <mat-card-header>
-    <mat-card-title>Nome do pokemon</mat-card-title>
+    <mat-card-title>{{pokemon.name}}</mat-card-title>
     <mat-card-subtitle>
-      <img [src]="pokemons" alt="imagem dos pokemons">
+      <img [src]="pegarImagemPokemon()" alt="imagem dos pokemons">
     </mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <button mat-raised-button>caracteristica 1</button>
-    <button mat-raised-button>caracteristica 2</button>
+    <button mat-raised-button>{{pokemon.types}}</button>
   </mat-card-content>
 </mat-card>

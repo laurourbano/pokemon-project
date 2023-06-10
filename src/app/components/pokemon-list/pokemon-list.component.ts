@@ -11,19 +11,19 @@ export class PokemonListComponent {
     {
       number: 1,
       name: 'Bulbasaur',
-      url: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png',
+      url: '',
       types: [ 'Grass', 'Poison' ],
     },
     {
       number: 2,
       name: 'Ivysaur',
-      url: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png',
+      url: '',
       types: [ 'Grass', 'Poison' ],
     },
     {
       number: 3,
       name: 'Venusaur',
-      url: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png',
+      url: '',
       types: [ 'Grass', 'Poison' ],
     },
     {
