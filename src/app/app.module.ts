@@ -10,6 +10,8 @@ import { PokemonService } from './service/pokemon.service';
 import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
 import { PokemonCardComponent } from './components/pokemon-card/pokemon-card.component';
 import { PokemonDetailsComponent } from './components/pokemon-details/pokemon-details.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { PokemonDetailsComponent } from './components/pokemon-details/pokemon-de
     PokemonListComponent,
     PokemonCardComponent,
     PokemonDetailsComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
