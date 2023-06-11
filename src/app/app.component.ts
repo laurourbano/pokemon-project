@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.scss' ]
 })
 export class AppComponent {
-  title = 'pokemon-project';
+  title = 'PokemonProject';
 
   constructor(private httpClient: HttpClient) {
   }
