@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Pokemon } from 'src/app/model/pokemon';
 import { PokemonService } from 'src/app/service/pokemon.service';
 @Component({
   selector: 'app-pokemon-card',
@@ -6,16 +7,21 @@ import { PokemonService } from 'src/app/service/pokemon.service';
   styleUrls: [ './pokemon-card.component.scss' ]
 })
 export class PokemonCardComponent {
-  
-  @Input() pokemon: any = {};
-  @Input() number: number = 0;
+
+  @Input() pokemon: Pokemon = {} as Pokemon;
+  imgUrl: string = 'no pokemons';
 
   constructor(public pokemonService: PokemonService) {
-    
   }
 
-  pegarImagemPokemon() {
-    const numeroFormatadado = this.number.toString().padStart(3, '0');
-    return `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${ numeroFormatadado }.png`;
+  ngOnInit(){
+    this.atualizarImagemPokemon();
+  }
+// atualizar imagem do pokemon para a imagem do pokemon selecionado
+  async atualizarImagemPokemon() {
+    const requisicao = await this.pokemonService
+      .getPokemon(this.pokemon.url).toPromise();
+
+    this.imgUrl = requisicao.sprites.front_default;
   }
 }
