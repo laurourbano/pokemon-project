@@ -1,27 +1,52 @@
 # PokemonProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
+Este é um projeto de página de Pokemon usando a API externa.
 
-## Development server
+## Tecnologias Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-## Code scaffolding
+- Angular CLI version 16.0.5
+- HTML
+- CSS
+- TypeScript
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Funcionalidades
 
-## Build
+A página permite visualizar informações sobre diferentes Pokemon, como nome, tipo, habilidades e estatísticas. As informações são obtidas através de uma API externa.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Como Executar o Projeto
 
-## Running unit tests
+Para executar o projeto, siga os passos abaixo:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Certifique-se de ter o Angular CLI instalado em seu ambiente de desenvolvimento.
 
-## Running end-to-end tests
+2. Clone este repositório em sua máquina local.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Navegue até o diretório do projeto no terminal.
 
-## Further help
+4. Instale as dependências do projeto executando o seguinte comando:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```
+   npm install
+   ```
+
+5. Após a instalação das dependências, execute o projeto com o seguinte comando:
+
+   ```
+   ng serve
+   ```
+
+6. Acesse a página no seu navegador através do link: [http://localhost:4200/](http://localhost:4200/).
+
+## Observações
+
+- Certifique-se de ter uma conexão com a internet para que a página possa buscar as informações dos Pokemon através da API externa.
+
+## Contribuindo
+
+Se você deseja contribuir com o projeto, fique à vontade para abrir uma "pull request" com suas melhorias ou correções.
+
+## Contato
+
+Caso queira entrar em contato ou conhecer mais projetos, você pode me encontrar no [GitHub](https://github.com/laurourbano).
