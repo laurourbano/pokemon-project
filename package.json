@@ -37,9 +37,9 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~5.0.2"
-  } ,
+  },
   "overrides": {
-  "postcss": "^8.4.31",
-  "@babel/traverse": "^7.23.2"
-}
+    "postcss": "^8.4.31",
+    "@babel/traverse": "^7.23.2"
+  }
 }
